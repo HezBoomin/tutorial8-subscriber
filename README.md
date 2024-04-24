@@ -7,4 +7,10 @@ The first guest is the username and the second guest is the password. The localh
 
 ### Slow subscriber
 ![slow](./image/Screenshot%202024-04-24%20200200.png)
+
 the queue number in the queued messages is around 50. This happens because the subscriber is slow to receive the data from the message broker. The subscriber is slow because it sleep for 1 seconds before receiving the data from the message broker.
+
+### 3 subscriber 1 publisher
+![3sub1pub](./image/Screenshot%202024-04-24%20201148.png)
+
+the queue messages is below 50 now. This happens because there are 3 subscribers that receive the data from the message broker. The data is distributed to the 3 subscribers.
